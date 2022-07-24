@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200&family=Edu+TAS+Beginner&family=Koulen&family=Macondo&family=Roboto+Flex:opsz,wght@8..144,200&family=Roboto:wght@100&family=Smooch&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto Flex', sans-serif;
+}
+
