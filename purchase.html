@@ -8,26 +8,39 @@
   <title>Phonie</title>
 
   <link rel="stylesheet" href="style.css">
+  <script src="app.mjs"></script>
 </head>
 
 <body>
-  <main class="purchase-cont">
+  <header>
+    <!--Phonielogo-->
+    <div class="logo">
+      <img src="./images/Phonie logo.png" width=100px alt="phonie">
+    </div>
+    
     <!--NAV BAR-->
     <nav class="nav-bar">
-      <!--Phonielogo-->
-      <div class="logo">
-        <img src="./images/Phonie logo.png" width=100px alt="phonie">
-      </div>
+      <ul>
+        <li><a href="index.html">ABOUT</a></li>
+        <li><a href="#">PURCHASE</a></li>
+        <li><a href="index.html">CONTACT US</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  
+<!--   <main class="purchase-cont"> -->
+<!--     <nav class="nav-bar">
 
       <!-- Nav-Links -->
-      <div class="nav-links">
+<!--       <div class="nav-links">
         <ul>
           <li><a href="index.html">ABOUT</a></li>
           <li><a href="#">PURCHASE</a></li>
           <li><a href="index.html">CONTACT US</a></li>
         </ul>
       </div>
-    </nav>
+    </nav> --> 
 
     <!-- FORM -->
     <section class="purchase-form">
@@ -44,11 +57,11 @@
 
           <div class="phone-number">
             <div class="phone-number-input">
-              <input id="phone_number" type="number" required placeholder="Phone Number:"><br />
+              <input id="input-number" type="number" required placeholder="Phone Number:"><br />
               <br />
             </div>
             <div class="mtn-logo">
-              <img src="./images/mtn-logo.png" alt="mtn-logo" </div>
+              <img class="network_logo" src="./images/mtn-logo.png" alt="mtn-logo" </div>
             </div>
 
 
@@ -71,7 +84,7 @@
       </div>
 
     </section>
-  </main>
+<!--   </main> -->
 
 </body>
 

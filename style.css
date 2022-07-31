@@ -8,15 +8,14 @@
 
 body {
   font-family: 'Roboto Flex', sans-serif;
-  width: 100%;
-
+/*   width: 100%; */
 }
 
-.nav-bar {
+/* .nav-bar {
   display: flex;
   padding: 1rem 1rem;
   justify-content: space-between;
-}
+} */
 
 .logo img {
   height: 200px;
@@ -182,6 +181,11 @@ hr{
 
 
 /*PURCHASE PAGE*/
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
 .purchase-cont{
     width: 60%;
     display: flex;

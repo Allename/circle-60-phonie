@@ -4,14 +4,16 @@ function startApp() {
   // so create and use/call additional functions from here
 
   // pls remove the below and make some magic in here!
-  console.log('make magic in here!');
+  const inputNumber = document.querySelector('#input-number')
+  const networkLogo = document.querySelector('network_logo')
+  console.log(inputNumber)
 
-  const header = document.querySelector('h2');
-  if (header) {
-    header.textContent = 'make some magic here!!';
+  if (inputNumber.startsWith('0803' && '0813')) {
+    networkLogo.innerHTML = '<img src="./images/mtn-logo.png" />'
   }
-};
+}
 
 // ======= DO NOT EDIT ============== //
 export default startApp;
-  // ======= EEND DO NOT EDIT ========= //
+  // ======= EEND DO NOT EDIT ========= //  console.log('make magic in here!');
+
