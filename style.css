@@ -1,312 +1,186 @@
-  @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200&family=Edu+TAS+Beginner&family=Koulen&family=Macondo&family=Roboto+Flex:opsz,wght@8..144,200&family=Roboto:wght@100&family=Smooch&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200&family=Edu+TAS+Beginner&family=Koulen&family=Macondo&family=Roboto+Flex:opsz,wght@8..144,200&family=Roboto:wght@100&family=Smooch&display=swap");
 
+body {
+  font-family: "Roboto Flex", sans-serif;
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+/* Navigation bar */
 
-body {
-  font-family: 'Roboto Flex', sans-serif;
-/*   width: 100%; */
-}
-
-/* .nav-bar {
+header {
+  margin: 2rem 0.5rem;
+  padding: 1.2rem 1rem;
+  height: 10vh;
   display: flex;
-  padding: 1rem 1rem;
   justify-content: space-between;
-} */
+  align-items: center;
+  margin-right: 50px;
+}
 
 .logo img {
-  height: 200px;
-  width: 150px;
-  margin-top: -70px;
+  width: 30%;
+  margin-top: 50px;
 }
 
-ul {
-    display: flex;
+.nav-bar {
+  padding: 0 1rem;
 }
 
-.nav-links  li {
-    list-style: none;
-    padding: 0 1.5rem;
+.nav-bar li {
+  display: inline;
+  list-style: none;
+  padding: 0 1rem;
 }
 
-.nav-links li a {
-    text-decoration: none;
-    color: #2D353D;
-    font-size: larger;
-    font-weight: bold;
-    transition: all 0.5s ease-in-out 0s;
+.nav-bar li a {
+  text-decoration: none;
+  color: #22abd1;
+  font-size: 14px;
+  font-weight: bold;
+  /* transition: all 0.5s ease-in-out 0s; */
 }
 
-.nav-links li a:hover {
-    border-bottom: 3px solid #2D353D;
-}
-/* Section Phone*/
-
-.section-phone{
-    margin: 5rem 0;
+.nav-bar li a:hover {
+  border-bottom: 3px solid #5acae8;
 }
 
-.container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  /*justify-content: space-between;*/
-  column-gap: 0.5rem;
+.user-number {
+  display: flex;
 }
 
-.phonedial > img{
-    width:90%;
-    height: 90%;
-    opacity: 0.5;
-    transition: all ease-in-out 1s;
+.mtn-logo,
+.glo-logo,
+.airtel-logo,
+.etisalat-logo {
+  margin-top: 20px;
+  width: 60px;
+  height: 50px;
 }
-.phonedial > img:hover{
-    opacity: 1;
+
+#contact {
+  display: flex;
+  justify-content: space-around;
+  margin: 1.5rem auto;
+  width: 40%;
+  font-weight: bold;
+}
+.twitter,
+.telephone,
+.email {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.twitter > img,
+.telephone > img,
+.email > img {
+  width: 20px;
+  height: 20px;
+}
+
+@media (max-width: 768px) {
+  #contact {
+    width: 95%;
   }
-.about-phonie{
-    white-space: pre-wrap;
-    font-size: 1.3rem;
-    font-weight: bold;
-    text-align: center;
-    /*margin-right: 1rem;*/
-    width: 100%;
-    color: #69d0ec;
-    font-stretch: expanded;
-}
 
-.btn{
-    margin: 2rem 0 0 auto;
-    width: 50%;
-
-}
-.btn > button{
-    padding: 1rem;
-    border: none;
-    border-radius: 1rem;
-    color: #69d0ec;
-    background-color: #0f141a;
-    transition: all 0.5s ease-in-out;
-}
-.btn > button:hover{
-    color: #0f141a;
-    background-color: #69d0ec;
-}
-
-.bottom-border{  
-  border-bottom: 3px solid black;
-
-}
-
-hr{
-    border: 2px solid black;
-}
-
-#contact{
-    display: flex;
-    justify-content: space-between;
-    margin: 1.5rem auto;
-    width: 90%;
-}
-.twitter, .telephone, .email{
-    display: flex;
-    gap: 0.5rem;
-}
-
-.twitter-img > img, .telephone-img > img, .email-img > img{
-    width: 20px;
-    height: 20px;
-}
-
-@media (max-width: 1015px){
-    .about-phonie{
-        font-size: 1.2rem;
-    }
-}
-
-@media (max-width:820px) {
-    .about-phonie{
-        font-size: 1rem;
-    }
-}
-
-@media (max-width:768px) {
-  .section-phone{
-    margin-top: -2rem;
+  #contact p {
+    font-size: 0.7rem;
   }
-    .container{
-        column-gap: 0.2rem;
-    }
-  .phonedial > img{
-     width: 95%;
-    height: 50%;
-    opacity: 0.5;
-    transition: all ease-in-out 1s;
-  }
-  .phonedial > img:hover{
-    opacity: 1;
-  }
-    .about-phonie{
-      margin-top: 1rem;
-        font-size: 1.5rem;
-    }
-
-    #contact{
-        width: 95%;
-    }
-    #contact p {
-        font-size: 0.7rem;
-    }
-    .btn{
-        margin:2rem 0;
-        width: 100%;
-    }
-    .btn > button{
-        width: 100%;
-    }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*PURCHASE PAGE*/
-header {
+
+.form-container {
+  width: 50%;
+  margin: 2.5rem auto;
+  border: 2px solid #5acae8;
+  border-radius: 2rem;
+}
+
+input {
+  border: 1px solid #5acae8;
+  border-radius: 1rem;
+  padding: 0.7rem;
+  margin: 1.5rem;
+  width: 80%;
+}
+
+input::placeholder {
+  font-weight: bolder;
+  color: black;
+}
+
+.payment_section {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  padding: 30px 0;
 }
-
-.purchase-cont{
-    width: 60%;
-    display: flex;
-    flex-direction: column;
-    margin: 3rem auto;
-}
-.purchase-form{
-    width: 60%;
-    margin: 2.5rem auto;
-    border: 2px inset rgb(97, 212, 233);
-    border-radius: 2rem;
-}
-.container-form{
-    width: 80%;
-    margin: 2rem auto;
-}
-
-input{
-    border: 1px inset rgb(97, 212, 233);
-    border-radius: 1rem;
-    padding: 0.5rem;
-    width: 80%;
-    
-}
-input::placeholder{
-    font-weight: bolder;
-}
-.phone-number{
-    display: grid;
-    grid-template-columns: 5fr 1fr;
-    gap: 0.5rem;
-}
-.phone-number-input > input{
-    width: 100%;
-}
-
-.mtn-logo img{
-    width: 30px;
-    height: 30px;
-  margin-top: auto;
-}
-
-.paystack img{
-    width: 100px;
-    height: 30px;
-  margin-top: auto;
-}
-
-.paystack{
-    display: flex;
-    justify-content: space-between;
-}
-.paystack-btn > button{
+.payment_section img {
   width: 100px;
-    padding: 0.6rem;
-    border: none;
-    font-weight: bold;
-    border-radius: 1rem;
-    color: #69d0ec;
-    background-color: #0f141a;
-    transition: all 0.5s ease-in-out;
-}
-.paystack-btn > button:hover{
-  font-weight: bold;
-    color: #0f141a;
-    background-color: #69d0ec;
+  height: 30px;
+  margin-top: auto;
 }
 
+.btn {
+  width: 100px;
+  padding: 0.6rem;
+  border: none;
+  font-weight: bold;
+  border-radius: 1rem;
+  color: #5acae8;
+  background-color: #0f141a;
+  transition: all 0.5s ease-in-out;
+}
+.btn:hover {
+  cursor: pointer;
+  font-weight: bold;
+  color: #0f141a;
+  background-color: #5acae8;
+}
 
 @media (max-width: 900px) {
-    .purchase-cont{
-        width: 80%;
-        
-    }
-  .phone-dial{
-      width: 100%;
-    }
+  .purchase-cont {
+    width: 80%;
+  }
+  .phone-dial {
+    width: 100%;
+  }
 }
-@media (max-width:770px) {
-
-    .nav-bar {
-      display: 100%;
-    }
-    .nav-links li a {
-        font-size: 0.7rem;
-    } 
-    .purchase-form{
-        width: 70%;
-    }
-    .container-form{
-        width: 90%;
-    }
-    .container{
-      width: 100%;
-      display: block;
-    }
-    .phone-dial{
-      width: 100%;
-    }
+@media (max-width: 770px) {
+  .nav-bar {
+    display: 100%;
+  }
+  .nav-links li a {
+    font-size: 0.7rem;
+  }
+  .purchase-form {
+    width: 70%;
+  }
 }
 @media (max-width: 525px) {
-    .purchase-cont{
-        width: 100%;
-    }
-  .logo img{
+  .purchase-cont {
+    width: 100%;
+  }
+  .logo img {
     width: 90px;
     height: 70px;
     margin-top: auto;
   }
-    .nav-links li a {
-        font-size: 0.45rem;
-    } 
-    .purchase-form{
-        width:   100%;
-    }
-    .container-form{
-        width: 100%;
-    }
-  .paystack img{
+  .nav-links li a {
+    font-size: 0.45rem;
+  }
+  .purchase-form {
+    width: 100%;
+  }
+  .container-form {
+    width: 100%;
+  }
+  .payment_section img {
     width: 50px;
     height: 30px;
-  margin-top: auto;
-}
+    margin-top: auto;
+  }
 }
