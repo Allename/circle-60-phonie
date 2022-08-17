@@ -7,6 +7,9 @@ function startApp() {
   const networkLogo = document.querySelector(".network-logo");
   const userNum = document.getElementById("Phone-number");
 
+
+
+
   userNum.addEventListener("input", getVal);
 
   const mtnCodes = [
@@ -67,7 +70,10 @@ function startApp() {
 
 }
 
+
+
+
 // ======= DO NOT EDIT ============== //
 export default startApp;
-  // ======= EEND DO NOT EDIT ========= //  console.log('make magic in here!');
+// ======= EEND DO NOT EDIT ========= //  console.log('make magic in here!');
 

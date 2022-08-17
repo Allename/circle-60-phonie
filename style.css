@@ -57,18 +57,19 @@ header {
 .glo-logo,
 .airtel-logo,
 .etisalat-logo {
-  margin-top: 20px;
-  width: 60px;
-  height: 50px;
+  margin: 2rem 0;
+  width: 3rem;
+  height: 3rem;
 }
 
 #contact {
   display: flex;
   justify-content: space-around;
-  margin: 1.5rem auto;
+  margin: 6rem 0 auto;
   width: 40%;
   font-weight: bold;
 }
+
 .twitter,
 .telephone,
 .email {
@@ -104,10 +105,10 @@ header {
 
 input {
   border: 1px solid #5acae8;
-  border-radius: 1rem;
+  border-radius: 0.3rem;
   padding: 0.7rem;
-  margin: 1.5rem;
-  width: 80%;
+  margin: 1rem 0.6rem;
+  width: 90%;
 }
 
 input::placeholder {
@@ -162,24 +163,32 @@ input::placeholder {
     width: 70%;
   }
 }
-@media (max-width: 525px) {
+
+@media screen and (max-width: 480px) {
+  
   .purchase-cont {
     width: 100%;
   }
+  
   .logo img {
     width: 90px;
     height: 70px;
     margin-top: auto;
   }
+  
   .nav-links li a {
     font-size: 0.45rem;
   }
+  
   .purchase-form {
     width: 100%;
   }
-  .container-form {
-    width: 100%;
+  
+  .form-container {
+    width: 90vw;
+    margin: 2rem 1rem;
   }
+  
   .payment_section img {
     width: 50px;
     height: 30px;
